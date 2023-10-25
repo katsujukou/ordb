@@ -1,0 +1,13 @@
+(include_subdirs unqualified)
+
+(executable
+ (package ordb)
+ (name report_svc)
+ (public_name report-svc)
+ (libraries
+   caqti-lwt.unix
+   cmdliner
+   lwt.unix
+   ordb
+   ordb_database
+ ))

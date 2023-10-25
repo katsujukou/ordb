@@ -1,0 +1,9 @@
+(library
+ (name ordb_database)
+ (public_name ordb_database)
+ (libraries 
+   petrol
+   caqti
+   caqti-lwt
+   caqti-driver-postgresql
+ ))

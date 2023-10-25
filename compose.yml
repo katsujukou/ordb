@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_DB: ordb
+      POSTGRES_PASSWORD: postgres    
+      # POSTGRES_INITDB_ARGS: "--auth-host=md5"
+      TZ: Asia/Tokyo
+    volumes:
+      - ./docker/db/initdb:/docker-entrypoint-initdb.d
+    ports:
+      - 5432:5432

@@ -1,0 +1,4 @@
+(library
+ (name ordb)
+ (public_name ordb)
+ (libraries petrol caqti-lwt))
